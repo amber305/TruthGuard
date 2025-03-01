@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TruthGuard | Fake News Detection</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <span class="icon">📰</span>
+        <h1>TruthGuard</h1>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="mobile-menu-btn">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Detect Fake News with Confidence</h1>
+      <p>Our advanced algorithm helps you identify misleading information online.</p>
+      <a href="#detector" class="btn primary-btn">Try It Now</a>
+      <a href="#how-it-works" class="btn secondary-btn">Learn More</a>
+    </div>
+    <div class="hero-image">
+      <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="News and information concept">
+    </div>
+  </section>
+
+  <section id="detector" class="detector">
+    <div class="container">
+      <h2>News Verification Tool</h2>
+      <p class="section-description">Paste a news article, headline, or content to analyze its credibility</p>
+      
+      <form id="news-form">
+        <div class="input-group">
+          <textarea id="news-text" placeholder="Paste news content here..."></textarea>
+        </div>
+        <button type="submit" class="btn primary-btn" id="analyze-btn">
+          <span class="btn-text">Analyze Content</span>
+          <span class="spinner hidden"></span>
+        </button>
+      </form>
+
+      <div id="result" class="hidden">
+        <div class="result-card">
+          <div id="result-icon" class="result-icon"></div>
+          <h3 id="result-title">Analysis Result</h3>
+          <p id="result-description">Our system has analyzed the content.</p>
+          <div class="confidence-meter">
+            <div class="confidence-label">Confidence Level:</div>
+            <div class="meter-container">
+              <div id="confidence-bar" class="meter-bar"></div>
+            </div>
+            <div id="confidence-percentage">0%</div>
+          </div>
+          <div class="result-details">
+            <div class="detail-item">
+              <span class="detail-icon">🔍</span>
+              <div class="detail-content">
+                <h4>Content Analysis</h4>
+                <p id="content-analysis">The content has been analyzed for patterns common in misleading information.</p>
+              </div>
+            </div>
+            <div class="detail-item">
+              <span class="detail-icon">📊</span>
+              <div class="detail-content">
+                <h4>Statistical Evaluation</h4>
+                <p id="statistical-evaluation">Our algorithm has evaluated the statistical likelihood of this content being factual.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About TruthGuard</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>TruthGuard is dedicated to combating the spread of misinformation in our digital world. Our platform uses advanced algorithms to analyze news content and identify potential fake news.</p>
+          <p>In an era where information spreads rapidly, verifying the authenticity of news has become more important than ever. We're committed to providing tools that help people make informed decisions about the content they consume.</p>
+          <div class="stats">
+            <div class="stat-item">
+              <h3>95%</h3>
+              <p>Accuracy Rate</p>
+            </div>
+            <div class="stat-item">
+              <h3>10M+</h3>
+              <p>Articles Analyzed</p>
+            </div>
+            <div class="stat-item">
+              <h3>24/7</h3>
+              <p>Continuous Learning</p>
+            </div>
+          </div>
+        </div>
+        <div class="about-image">
+          <img src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Digital information concept">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="how-it-works" class="how-it-works">
+    <div class="container">
+      <h2>How It Works</h2>
+      <p class="section-description">Our advanced system uses multiple techniques to verify news authenticity</p>
+      
+      <div class="steps">
+        <div class="step">
+          <div class="step-icon">1</div>
+          <h3>Content Analysis</h3>
+          <p>Our system analyzes the text for sensationalist language, clickbait titles, and emotional manipulation tactics.</p>
+        </div>
+        <div class="step">
+          <div class="step-icon">2</div>
+          <h3>Source Verification</h3>
+          <p>We check the credibility of the source against our database of known reliable and unreliable publishers.</p>
+        </div>
+        <div class="step">
+          <div class="step-icon">3</div>
+          <h3>Cross-Reference</h3>
+          <p>The content is cross-referenced with verified facts and other reporting on the same topic.</p>
+        </div>
+        <div class="step">
+          <div class="step-icon">4</div>
+          <h3>AI Evaluation</h3>
+          <p>Our machine learning algorithms evaluate patterns and provide a confidence score on the content's authenticity.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials" class="testimonials">
+    <div class="container">
+      <h2>What Our Users Say</h2>
+      <div class="testimonial-slider">
+        <div class="testimonial active">
+          <div class="quote">"TruthGuard has completely changed how I consume news. I feel more confident in distinguishing fact from fiction."</div>
+          <div class="author">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=150&q=80" alt="Sarah Johnson">
+            <div class="author-info">
+              <h4>Sarah Johnson</h4>
+              <p>Journalist</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial">
+          <div class="quote">"As an educator, I recommend TruthGuard to all my students. It's an essential tool in today's information landscape."</div>
+          <div class="author">
+            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&auto=format&fit=crop&w=150&q=80" alt="David Chen">
+            <div class="author-info">
+              <h4>David Chen</h4>
+              <p>Professor</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial">
+          <div class="quote">"The accuracy of TruthGuard's analysis is impressive. It's helped our organization verify information before publishing."</div>
+          <div class="author">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=150&q=80" alt="Maria Rodriguez">
+            <div class="author-info">
+              <h4>Maria Rodriguez</h4>
+              <p>News Editor</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slider-controls">
+        <button class="slider-dot active" data-index="0"></button>
+        <button class="slider-dot" data-index="1"></button>
+        <button class="slider-dot" data-index="2"></button>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p class="section-description">Have questions or feedback? We'd love to hear from you.</p>
+      
+      <div class="contact-content">
+        <form id="contact-form" class="contact-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Your name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Your email address">
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Your message"></textarea>
+          </div>
+          <button type="submit" class="btn primary-btn">Send Message</button>
+        </form>
+        
+        <div class="contact-info">
+          <div class="info-item">
+            <span class="info-icon">📧</span>
+            <div>
+              <h4>Email</h4>
+              <p>info@truthguard.com</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">📱</span>
+            <div>
+              <h4>Phone</h4>
+              <p>+1 (555) 123-4567</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">🏢</span>
+            <div>
+              <h4>Office</h4>
+              <p></p>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="#" class="social-link"><span class="social-icon"><img src="/assets/facebook.png" height="25px" width="25px"></span> Facebook</a>
+            <a href="#" class="social-link"><span class="social-icon"><img src="/assets/twitter.webp" height="25px" width="25px"></span> Twitter</a>
+            <a href="#" class="social-link"><span class="social-icon"><img src="/assets/linkedin.png" height="25px" width="25px"></span> LinkedIn</a>
+            <a href="#" class="social-link"><span class="social-icon"><img src="/assets/instagram.png" height="25px" width="25px"></span> Instagram</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <span class="icon">📰</span>
+          <h2>TruthGuard</h2>
+        </div>
+        <div class="footer-links">
+          <div class="footer-column">
+            <h3>Navigation</h3>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#how-it-works">How It Works</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Resources</h3>
+            <ul>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Research</a></li>
+              <li><a href="#">API Documentation</a></li>
+              <li><a href="#">Press Kit</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Legal</h3>
+            <ul>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Cookie Policy</a></li>
+              <li><a href="#">GDPR Compliance</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 TruthGuard. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="#" class="footer-social-icon"><img src="/assets/facebook.png" height="25px" width="25px"></a>
+          <a href="#" class="footer-social-icon"><img src="/assets/instagram.png" height="25px" width="25px"></a>
+          <a href="#" class="footer-social-icon"><img src="/assets/linkedin.png" height="25px" width="25px"></a>
+          <a href="#" class="footer-social-icon"><img src="/assets/twitter.webp" height="25px" width="25px"></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
